@@ -1,0 +1,572 @@
+@font-face {
+  font-family: "vaziri";
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.ttf"), url("../fonts/Vazir.woff"), url("../fonts/Vazir.woff2"); }
+
+@keyframes anim {
+  0% {
+    transform: scale(1) rotate(1deg); }
+  100% {
+    transform: scale(1.3); } }
+
+.container {
+  max-width: 1100px;
+  margin: 150 auto;
+  overflow: auto; }
+
+a {
+  text-decoration: none;
+  font-size: 20px; }
+
+ul {
+  list-style: none; }
+
+.bg-light {
+  background: white; }
+
+.px-1 {
+  padding: 0 1rem; }
+
+.px-2 {
+  padding: 0 2rem; }
+
+.px-3 {
+  padding: 0 3rem; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.fs {
+  font-size: 1.5rem;
+  font-weight: normal; }
+
+.fss {
+  font-size: 1.2rem;
+  font-weight: normal; }
+
+.bold {
+  font-weight: bolder;
+  font-size: 2.2rem; }
+
+.boldness {
+  font-weight: bolder;
+  font-size: 1.2rem; }
+
+.border-bottom {
+  border-bottom: 4px solid #7938f2;
+  width: 30%;
+  margin: 0 auto; }
+
+.text-primary {
+  color: #7938f2; }
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(333deg, #2b0179 0%, #2b0179 0%, #7938f2 100%, #7938f2 100%);
+  margin: 1rem;
+  padding: 1rem 2rem;
+  color: #f4f4f4;
+  border-radius: 15px;
+  font-size: 25px; }
+
+.btn:hover {
+  background: #7938f2;
+  cursor: pointer; }
+
+@keyframes anim {
+  0% {
+    transform: scale(1) rotate(1deg); }
+  100% {
+    transform: scale(1.3); } }
+
+@font-face {
+  font-family: "vaziri";
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.ttf"), url("../fonts/Vazir.woff"), url("../fonts/Vazir.woff2"); }
+
+@keyframes anim {
+  0% {
+    transform: scale(1) rotate(1deg); }
+  100% {
+    transform: scale(1.3); } }
+
+.container {
+  max-width: 1100px;
+  margin: 150 auto;
+  overflow: auto; }
+
+a {
+  text-decoration: none;
+  font-size: 20px; }
+
+ul {
+  list-style: none; }
+
+.bg-light {
+  background: white; }
+
+.px-1 {
+  padding: 0 1rem; }
+
+.px-2 {
+  padding: 0 2rem; }
+
+.px-3 {
+  padding: 0 3rem; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.fs {
+  font-size: 1.5rem;
+  font-weight: normal; }
+
+.fss {
+  font-size: 1.2rem;
+  font-weight: normal; }
+
+.bold {
+  font-weight: bolder;
+  font-size: 2.2rem; }
+
+.boldness {
+  font-weight: bolder;
+  font-size: 1.2rem; }
+
+.border-bottom {
+  border-bottom: 4px solid #7938f2;
+  width: 30%;
+  margin: 0 auto; }
+
+.text-primary {
+  color: #7938f2; }
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(333deg, #2b0179 0%, #2b0179 0%, #7938f2 100%, #7938f2 100%);
+  margin: 1rem;
+  padding: 1rem 2rem;
+  color: #f4f4f4;
+  border-radius: 15px;
+  font-size: 25px; }
+
+.btn:hover {
+  background: #7938f2;
+  cursor: pointer; }
+
+@keyframes anim {
+  0% {
+    transform: scale(1) rotate(1deg); }
+  100% {
+    transform: scale(1.3); } }
+
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "vaziri";
+  background: #f4f4f4; }
+
+/* #navbar */
+#navbar {
+  box-shadow: 15px 15px 15px #ccc;
+  padding: 1.5rem;
+  background: #f4f4f4;
+  position: sticky;
+  top: 0;
+  z-index: 2; }
+  #navbar .nav-content {
+    display: flex;
+    justify-content: space-between; }
+    #navbar .nav-content .menu {
+      display: flex; }
+      #navbar .nav-content .menu ul {
+        display: flex; }
+        #navbar .nav-content .menu ul li {
+          list-style: none;
+          margin: 1rem;
+          /* padding: 1rem; */ }
+          #navbar .nav-content .menu ul li a {
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            transition: color 0.5s; }
+            #navbar .nav-content .menu ul li a:hover, #navbar .nav-content .menu ul li a.active {
+              background: linear-gradient(333deg, #2b0179 0%, #2b0179 0%, #7938f2 100%, #7938f2 100%);
+              color: #f4f4f4; }
+    #navbar .nav-content .login {
+      display: flex; }
+      #navbar .nav-content .login a {
+        padding: 1rem 1.5rem;
+        position: relative; }
+        #navbar .nav-content .login a:hover {
+          background: #ccc;
+          border-radius: 50%; }
+        #navbar .nav-content .login a:first-child ::after {
+          border-radius: 50%;
+          position: absolute;
+          content: "0";
+          background: crimson;
+          top: 10px;
+          left: 15px;
+          width: 20px;
+          height: 20px;
+          color: white;
+          text-align: center;
+          transition: all 0.5s; }
+        #navbar .nav-content .login a:last-child {
+          border-radius: 20px; }
+
+#header .header-content {
+  border-bottom: 100px solid white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  #header .header-content img {
+    height: 70vh;
+    width: 50vw; }
+  #header .header-content div {
+    display: grid;
+    /* height: 70vh; */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center; }
+
+#home-1 .home-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  grid-gap: 1rem; }
+  #home-1 .home-content div {
+    padding: 1.5rem; }
+    #home-1 .home-content div ul li {
+      padding: 0.5rem; }
+      #home-1 .home-content div ul li i {
+        color: #7938f2; }
+
+#home-2 .home-content {
+  display: grid;
+  grid-template-columns: 3fr 5fr; }
+  #home-2 .home-content .img {
+    background: url("../img/frontend-intro.svg") no-repeat center center/cover;
+    height: 300px;
+    width: 30vw;
+    margin: 0 auto; }
+  #home-2 .home-content p {
+    text-align: justify;
+    padding: 1rem 1rem; }
+  #home-2 .home-content span {
+    padding: 1rem; }
+
+#home-3 {
+  margin: 5rem 0.5rem; }
+  #home-3 .home-content {
+    display: grid;
+    grid-template-columns: 3fr 6fr; }
+    #home-3 .home-content .item {
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); }
+
+#cards {
+  margin-top: 5rem;
+  text-align: center; }
+  #cards .card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-items: center; }
+    #cards .card-content .card {
+      border-radius: 10px;
+      box-shadow: 10px 10px 15px #ccc;
+      margin: 2rem 0; }
+      #cards .card-content .card div {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex: 1;
+        justify-content: space-between; }
+      #cards .card-content .card .card-body {
+        overflow: hidden; }
+        #cards .card-content .card .card-body:hover img {
+          animation: anim 1s ease-in-out forwards; }
+
+#blogs .slider-inner {
+  width: 800px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  float: left; }
+  #blogs .slider-inner img {
+    display: none;
+    width: 800px;
+    height: 400px; }
+  #blogs .slider-inner img.active {
+    display: inline-block; }
+
+#blogs .next,
+#blogs .prev {
+  float: left;
+  margin-top: 180px;
+  cursor: pointer;
+  background: linear-gradient(333deg, #2b0179 0%, #2b0179 0%, #7938f2 100%, #7938f2 100%);
+  border-radius: 50%;
+  padding: 1rem;
+  color: white; }
+
+#blogs .prev {
+  position: relative;
+  z-index: 100;
+  margin-right: -25px; }
+
+#blogs .next {
+  position: relative;
+  z-index: 100;
+  margin-left: -25px; }
+
+@font-face {
+  font-family: "vaziri";
+  src: url("../fonts/Vazir.eot");
+  src: url("../fonts/Vazir.ttf"), url("../fonts/Vazir.woff"), url("../fonts/Vazir.woff2"); }
+
+@keyframes anim {
+  0% {
+    transform: scale(1) rotate(1deg); }
+  100% {
+    transform: scale(1.3); } }
+
+.container {
+  max-width: 1100px;
+  margin: 150 auto;
+  overflow: auto; }
+
+a {
+  text-decoration: none;
+  font-size: 20px; }
+
+ul {
+  list-style: none; }
+
+.bg-light {
+  background: white; }
+
+.px-1 {
+  padding: 0 1rem; }
+
+.px-2 {
+  padding: 0 2rem; }
+
+.px-3 {
+  padding: 0 3rem; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.fs {
+  font-size: 1.5rem;
+  font-weight: normal; }
+
+.fss {
+  font-size: 1.2rem;
+  font-weight: normal; }
+
+.bold {
+  font-weight: bolder;
+  font-size: 2.2rem; }
+
+.boldness {
+  font-weight: bolder;
+  font-size: 1.2rem; }
+
+.border-bottom {
+  border-bottom: 4px solid #7938f2;
+  width: 30%;
+  margin: 0 auto; }
+
+.text-primary {
+  color: #7938f2; }
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(333deg, #2b0179 0%, #2b0179 0%, #7938f2 100%, #7938f2 100%);
+  margin: 1rem;
+  padding: 1rem 2rem;
+  color: #f4f4f4;
+  border-radius: 15px;
+  font-size: 25px; }
+
+.btn:hover {
+  background: #7938f2;
+  cursor: pointer; }
+
+@keyframes anim {
+  0% {
+    transform: scale(1) rotate(1deg); }
+  100% {
+    transform: scale(1.3); } }
+
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "vaziri";
+  background: #f4f4f4; }
+
+/* #footer */
+#main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem; }
+  #main-footer div:first-child {
+    width: 80%; }
+  #main-footer .images {
+    width: 20%;
+    text-align: center;
+    margin: 0 auto; }
+  #main-footer img {
+    width: 40%;
+    width: 40%; }
+  #main-footer .fabs {
+    display: flex; }
+  #main-footer .fabs i {
+    display: flex;
+    flex: 1;
+    padding: 1rem;
+    justify-content: center; }
+  #main-footer div:first-child p {
+    padding: 1rem; }
+  #main-footer title p .role {
+    text-align: center; }
+  #main-footer .scroll-top {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(333deg, #2b0179 0%, #2b0179 0%, #7938f2 100%, #7938f2 100%);
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 9999;
+    text-align: center; }
+    #main-footer .scroll-top:hover {
+      cursor: pointer; }
+    #main-footer .scroll-top i {
+      padding-top: 10px;
+      font-size: 30px; }
+
+@media (max-width: 768px) {
+  #navbar {
+    text-align: center; }
+    #navbar .nav-content {
+      flex-direction: column-reverse; }
+      #navbar .nav-content .menu ul {
+        margin: 0 auto; }
+  #header .header-content {
+    grid-template-columns: 1fr; }
+    #header .header-content img {
+      width: 100%;
+      height: 30vh; }
+  #home-1 .home-content {
+    grid-template-columns: 1fr; }
+    #home-1 .home-content div {
+      border-bottom: 1px solid #ccc; }
+      #home-1 .home-content div:last-child {
+        border-bottom: none; }
+  #home-2 .home-content {
+    grid-template-columns: 1fr; }
+    #home-2 .home-content .img {
+      width: 90vw; }
+  #home-3 .home-content {
+    grid-template-columns: 1fr;
+    text-align: center; }
+    #home-3 .home-content .title {
+      margin: 2rem 0.5rem; }
+    #home-3 .home-content .item {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem; }
+  #main-footer {
+    flex-direction: column; }
+    #main-footer div:first-child {
+      width: 100%;
+      text-align: justify; }
+    #main-footer .role {
+      padding: 1rem;
+      margin: 0 auto;
+      width: 100%; }
+    #main-footer div:last-child {
+      text-align: center;
+      width: 100%; }
+    #main-footer img {
+      text-align: center; } }
+
+@media (max-width: 500px) {
+  #navbar .nav-content {
+    flex-direction: column-reverse; }
+    #navbar .nav-content .menu img {
+      display: none; }
+    #navbar .nav-content .menu ul li a {
+      font-size: 0.77rem; }
+  #header .header-content {
+    grid-template-columns: 1fr;
+    text-align: center; }
+    #header .header-content img {
+      height: 30vh;
+      margin: 0 auto; }
+    #header .header-content div h1 {
+      font-size: 1.5rem; }
+    #header .header-content div p {
+      font-size: 1rem; }
+  #home-1 .home-content {
+    grid-template-columns: 1fr; }
+    #home-1 .home-content div {
+      border-bottom: 1px solid #ccc; }
+  #home-2 .home-content {
+    grid-template-columns: 1fr; }
+    #home-2 .home-content .img {
+      width: 90vw;
+      margin: 1rem; }
+  #home-3 .home-content {
+    text-align: center;
+    grid-template-columns: 1fr; }
+    #home-3 .home-content .title {
+      margin: 2rem 0.5rem; }
+    #home-3 .home-content .item {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem; }
+  #main-footer {
+    flex-direction: column; }
+    #main-footer div:first-child {
+      width: 100%;
+      text-align: justify; }
+    #main-footer .role {
+      padding: 1rem;
+      margin: 0 auto;
+      width: 100%; }
+    #main-footer div:last-child {
+      text-align: center;
+      width: 100%; }
+    #main-footer img {
+      text-align: center; } }
